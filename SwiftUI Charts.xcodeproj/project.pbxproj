@@ -11,6 +11,7 @@
 		940486D52B7B490200813E83 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940486D42B7B490200813E83 /* ContentView.swift */; };
 		940486D72B7B490300813E83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 940486D62B7B490300813E83 /* Assets.xcassets */; };
 		940486DA2B7B490300813E83 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 940486D92B7B490300813E83 /* Preview Assets.xcassets */; };
+		940486E52B7B494000813E83 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940486E42B7B494000813E83 /* ColorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		940486D42B7B490200813E83 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		940486D62B7B490300813E83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		940486D92B7B490300813E83 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		940486E42B7B494000813E83 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,10 @@
 		940486D12B7B490200813E83 /* SwiftUI Charts */ = {
 			isa = PBXGroup;
 			children = (
+				940486E32B7B492500813E83 /* Extensions */,
+				940486E22B7B492000813E83 /* Model */,
+				940486E12B7B491800813E83 /* ViewModel */,
+				940486E02B7B490F00813E83 /* View */,
 				940486D22B7B490200813E83 /* SwiftUI_ChartsApp.swift */,
 				940486D42B7B490200813E83 /* ContentView.swift */,
 				940486D62B7B490300813E83 /* Assets.xcassets */,
@@ -65,6 +71,51 @@
 				940486D92B7B490300813E83 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		940486E02B7B490F00813E83 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				940486E62B7B496B00813E83 /* Component Views */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		940486E12B7B491800813E83 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		940486E22B7B492000813E83 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		940486E32B7B492500813E83 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				940486E42B7B494000813E83 /* ColorExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		940486E62B7B496B00813E83 /* Component Views */ = {
+			isa = PBXGroup;
+			children = (
+				940486E72B7B497600813E83 /* ColorfulButtonView */,
+			);
+			path = "Component Views";
+			sourceTree = "<group>";
+		};
+		940486E72B7B497600813E83 /* ColorfulButtonView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ColorfulButtonView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +188,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				940486E52B7B494000813E83 /* ColorExtension.swift in Sources */,
 				940486D52B7B490200813E83 /* ContentView.swift in Sources */,
 				940486D32B7B490200813E83 /* SwiftUI_ChartsApp.swift in Sources */,
 			);
