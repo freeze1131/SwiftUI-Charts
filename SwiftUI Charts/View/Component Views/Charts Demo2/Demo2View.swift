@@ -11,13 +11,11 @@ import Charts
 struct Demo2View: View {
     let min = 0.0
     let max = 1000.0
+    @State var toggleLegend: Bool = false
     
     var body: some View {
        
         VStack(alignment:.center) {
-            Text("Hello, World!")
-                .font(.largeTitle)
-            
             Chart {
                 BarMark(x: .value("Day", "Sun"),y: .value("Sales", 100))
                     .annotation {
@@ -54,6 +52,16 @@ struct Demo2View: View {
             .chartYAxis {
                 AxisMarks (position: .trailing)
             }
+            .chartLegend(toggleLegend ? .hidden : .visible)
+            
+            Button(action: {
+                withAnimation{
+                    toggleLegend.toggle()
+                }
+            }, label: {
+                Image(systemName: toggleLegend ? "eye" : "eye.slash")
+            })
+            .padding()
         }
         .padding()
     }
