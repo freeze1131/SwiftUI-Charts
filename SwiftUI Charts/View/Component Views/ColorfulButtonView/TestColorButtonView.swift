@@ -18,15 +18,44 @@ struct TestColorButtonVie: View {
     @State private var rotateBar: Bool = false
     @State private var tiltBar: Double = 0.0
     
+    let threshHold = 30.0
+    
     
     
     var body: some View {
         NavigationStack {
             HStack(alignment: .bottom,spacing: 5) {
-               
+                
                 ForEach(colors,id:\.self) { color in
                     let height = Double.random(in: 50...200)
                     BorderedRectangle(color: color, barWidth: barWidth, height: height)
+                }
+            }
+            .rotation3DEffect(
+                .degrees(rotateBar ? 180 : 0 ),
+                axis: (x: 0.0, y: 1.0, z: 0.0)
+            )
+            .rotation3DEffect(
+                .degrees(-tiltBar * 45),
+                axis: (x: 0.0, y: 1.0, z: 0.0)
+                )
+            .gesture (
+                DragGesture()
+                    .onChanged{ value in
+                        withAnimation{
+                            if value.translation.width > threshHold {
+                                tiltBar = -1
+                            } else if value.translation.width < -threshHold {
+                                tiltBar = 1
+                            } else {
+                                tiltBar = 0
+                            }
+                        }
+                    }
+            )
+            .onTapGesture {
+                withAnimation{
+                    tiltBar = 0
                 }
             }
         }
@@ -44,8 +73,8 @@ struct BorderedRectangle: View {
             .fill(color)
             .frame(width: barWidth,height: height)
             .overlay(
-            RoundedRectangle(cornerRadius: 5)
-                .stroke(lineWidth: 0.7))
+                RoundedRectangle(cornerRadius: 5)
+                    .stroke(lineWidth: 0.7))
     }
 }
 
