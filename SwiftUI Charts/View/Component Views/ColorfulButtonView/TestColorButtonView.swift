@@ -58,6 +58,16 @@ struct TestColorButtonVie: View {
                     tiltBar = 0
                 }
             }
+            .navigationTitle("Demo 1 ")
+            .toolbar(){
+                ToolbarItem(placement: .bottomBar) {
+                    ColorfulButtonView(colors: $colors, dim: 50, offset: 10) {
+                        withAnimation {
+                            rotateBar.toggle()
+                        }
+                    }
+                }
+            }
         }
     }
 }
