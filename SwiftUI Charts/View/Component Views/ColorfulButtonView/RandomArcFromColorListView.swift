@@ -16,18 +16,18 @@ struct RandomArcFromColorListView: View {
     let rotate = Double.random(in: 0...360)
 
     // Computed Properties
-    var theIndex: CGFloat {
+    var theIndex: Int {
         if index < colors.count && index >= 0 {
-            return CGFloat(index)
+            return index
         } else {
-            return 0.0
+            return 0
         }
     }
     var count: CGFloat {
         CGFloat(colors.count)
     }
     var color: Color {
-        colors[index]
+        colors[theIndex]
     }
     var endRadius: CGFloat {
         minRadius + maxRadius / count
