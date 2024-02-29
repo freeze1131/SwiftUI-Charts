@@ -12,6 +12,10 @@
 		940486D72B7B490300813E83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 940486D62B7B490300813E83 /* Assets.xcassets */; };
 		940486DA2B7B490300813E83 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 940486D92B7B490300813E83 /* Preview Assets.xcassets */; };
 		940486E52B7B494000813E83 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940486E42B7B494000813E83 /* ColorExtension.swift */; };
+		94D6BA4D2B909C5400BB28DA /* ColorfulButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D6BA4C2B909C5400BB28DA /* ColorfulButtonView.swift */; };
+		94D6BA4F2B909C6F00BB28DA /* RandomArcFromColorListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D6BA4E2B909C6F00BB28DA /* RandomArcFromColorListView.swift */; };
+		94D6BA512B909C7D00BB28DA /* ArcView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D6BA502B909C7D00BB28DA /* ArcView.swift */; };
+		94D6BA532B909CEE00BB28DA /* TestColorButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D6BA522B909CEE00BB28DA /* TestColorButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +25,10 @@
 		940486D62B7B490300813E83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		940486D92B7B490300813E83 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		940486E42B7B494000813E83 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		94D6BA4C2B909C5400BB28DA /* ColorfulButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorfulButtonView.swift; sourceTree = "<group>"; };
+		94D6BA4E2B909C6F00BB28DA /* RandomArcFromColorListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomArcFromColorListView.swift; sourceTree = "<group>"; };
+		94D6BA502B909C7D00BB28DA /* ArcView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcView.swift; sourceTree = "<group>"; };
+		94D6BA522B909CEE00BB28DA /* TestColorButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestColorButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +122,10 @@
 		940486E72B7B497600813E83 /* ColorfulButtonView */ = {
 			isa = PBXGroup;
 			children = (
+				94D6BA4C2B909C5400BB28DA /* ColorfulButtonView.swift */,
+				94D6BA4E2B909C6F00BB28DA /* RandomArcFromColorListView.swift */,
+				94D6BA502B909C7D00BB28DA /* ArcView.swift */,
+				94D6BA522B909CEE00BB28DA /* TestColorButtonView.swift */,
 			);
 			path = ColorfulButtonView;
 			sourceTree = "<group>";
@@ -188,7 +200,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94D6BA4D2B909C5400BB28DA /* ColorfulButtonView.swift in Sources */,
+				94D6BA4F2B909C6F00BB28DA /* RandomArcFromColorListView.swift in Sources */,
 				940486E52B7B494000813E83 /* ColorExtension.swift in Sources */,
+				94D6BA512B909C7D00BB28DA /* ArcView.swift in Sources */,
+				94D6BA532B909CEE00BB28DA /* TestColorButtonView.swift in Sources */,
 				940486D52B7B490200813E83 /* ContentView.swift in Sources */,
 				940486D32B7B490200813E83 /* SwiftUI_ChartsApp.swift in Sources */,
 			);
