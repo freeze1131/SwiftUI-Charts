@@ -29,22 +29,20 @@ struct Charts_Demo3: View {
             VStack {
                 Chart {
                     ForEach(dailySales) { item in
-                        
                         if isVerticalChart {
                             switch(chartType) {
                             case  .bar:
-                                
                                 BarMark( x: .value("Sales", item.sales),y: .value("Day", item.day))
                                     .foregroundStyle(by: .value("Day", item.day))
                             case  .line:
                                 LineMark( x: .value("Sales", item.sales),y: .value("Day", item.day))
                             case  .area:
                                 AreaMark( x: .value("Sales", item.sales),y: .value("Day", item.day))
+                                
                             }
                         } else { // Horizontal case
                             switch(chartType) {
                             case  .bar:
-                                
                                 BarMark( x:.value("Day", item.day) ,y:  .value("Sales", item.sales) )
                                     .foregroundStyle(by: .value("Day", item.day))
                             case  .line:
@@ -53,13 +51,9 @@ struct Charts_Demo3: View {
                                 AreaMark( x:.value("Day", item.day) , y: .value("Sales", item.sales) )
                             }
                         }
-                        
-                        
-                        
                     }
                 }
                 .chartLegend(.hidden)
-                
                 HStack(spacing: 30) {
                     Button(action: {
                         withAnimation {
@@ -94,7 +88,6 @@ struct Charts_Demo3: View {
                             .rotationEffect(.degrees (isVerticalChart ? 90 : 0))
                     })
                 }
-                
             }
             .padding()
             .navigationTitle("Demo 3")
