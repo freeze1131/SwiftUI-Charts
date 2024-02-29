@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct TestColorButtonVie: View {
+struct TestColorButtonView: View {
     @State var colors: [Color]
     var count: CGFloat {
         CGFloat(colors.count)
@@ -89,5 +89,5 @@ struct BorderedRectangle: View {
 }
 
 #Preview {
-    TestColorButtonVie(colors: Color.defaultColors)
+    TestColorButtonView(colors: Color.defaultColors)
 }

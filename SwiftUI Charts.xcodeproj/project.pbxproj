@@ -114,12 +114,12 @@
 		940486E62B7B496B00813E83 /* Component Views */ = {
 			isa = PBXGroup;
 			children = (
-				940486E72B7B497600813E83 /* ColorfulButtonView */,
+				940486E72B7B497600813E83 /* Charts Demo1 */,
 			);
 			path = "Component Views";
 			sourceTree = "<group>";
 		};
-		940486E72B7B497600813E83 /* ColorfulButtonView */ = {
+		940486E72B7B497600813E83 /* Charts Demo1 */ = {
 			isa = PBXGroup;
 			children = (
 				94D6BA4C2B909C5400BB28DA /* ColorfulButtonView.swift */,
@@ -127,7 +127,7 @@
 				94D6BA502B909C7D00BB28DA /* ArcView.swift */,
 				94D6BA522B909CEE00BB28DA /* TestColorButtonView.swift */,
 			);
-			path = ColorfulButtonView;
+			path = "Charts Demo1";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
