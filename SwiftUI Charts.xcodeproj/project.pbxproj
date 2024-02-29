@@ -17,6 +17,7 @@
 		94D6BA512B909C7D00BB28DA /* ArcView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D6BA502B909C7D00BB28DA /* ArcView.swift */; };
 		94D6BA532B909CEE00BB28DA /* TestColorButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D6BA522B909CEE00BB28DA /* TestColorButtonView.swift */; };
 		94D6BA562B90DAC400BB28DA /* Demo2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D6BA552B90DAC400BB28DA /* Demo2View.swift */; };
+		94D6BA582B90E24400BB28DA /* Charts Demo3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D6BA572B90E24400BB28DA /* Charts Demo3.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		94D6BA502B909C7D00BB28DA /* ArcView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcView.swift; sourceTree = "<group>"; };
 		94D6BA522B909CEE00BB28DA /* TestColorButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestColorButtonView.swift; sourceTree = "<group>"; };
 		94D6BA552B90DAC400BB28DA /* Demo2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo2View.swift; sourceTree = "<group>"; };
+		94D6BA572B90E24400BB28DA /* Charts Demo3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Charts Demo3.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 			children = (
 				94D6BA542B90DAB400BB28DA /* Charts Demo2 */,
 				940486E72B7B497600813E83 /* Charts Demo1 */,
+				94D6BA572B90E24400BB28DA /* Charts Demo3.swift */,
 			);
 			path = "Component Views";
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 				94D6BA562B90DAC400BB28DA /* Demo2View.swift in Sources */,
 				94D6BA532B909CEE00BB28DA /* TestColorButtonView.swift in Sources */,
 				940486D52B7B490200813E83 /* ContentView.swift in Sources */,
+				94D6BA582B90E24400BB28DA /* Charts Demo3.swift in Sources */,
 				940486D32B7B490200813E83 /* SwiftUI_ChartsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

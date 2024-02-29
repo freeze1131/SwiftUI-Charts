@@ -11,6 +11,7 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             NavigationLink("Demo 1", destination: TestColorButtonView(colors: Color.defaultColors))
+            NavigationLink("Demo 2", destination: Demo2View())
             .navigationTitle("Charts")
         }
     }
