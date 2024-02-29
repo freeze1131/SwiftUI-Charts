@@ -29,16 +29,33 @@ struct Charts_Demo3: View {
             VStack {
                 Chart {
                     ForEach(dailySales) { item in
-                        switch(chartType) {
-                        case  .bar:
-                            BarMark( x: .value("Sales", item.sales),y: .value("Day", item.day))
-                                .foregroundStyle(by: .value("Day", item.day))
-                        case  .line:
-                            LineMark( x: .value("Sales", item.sales),y: .value("Day", item.day))
-                        case  .area:
-                            AreaMark( x: .value("Sales", item.sales),y: .value("Day", item.day))
+                        
+                        if isVerticalChart {
+                            switch(chartType) {
+                            case  .bar:
+                                
+                                BarMark( x: .value("Sales", item.sales),y: .value("Day", item.day))
+                                    .foregroundStyle(by: .value("Day", item.day))
+                            case  .line:
+                                LineMark( x: .value("Sales", item.sales),y: .value("Day", item.day))
+                            case  .area:
+                                AreaMark( x: .value("Sales", item.sales),y: .value("Day", item.day))
+                            }
+                        } else { // Horizontal case
+                            switch(chartType) {
+                            case  .bar:
+                                
+                                BarMark( x:.value("Day", item.day) ,y:  .value("Sales", item.sales) )
+                                    .foregroundStyle(by: .value("Day", item.day))
+                            case  .line:
+                                LineMark( x: .value("Day", item.day) ,y: .value("Sales", item.sales))
+                            case  .area:
+                                AreaMark( x:.value("Day", item.day) , y: .value("Sales", item.sales) )
+                            }
                         }
-                      
+                        
+                        
+                        
                     }
                 }
                 .chartLegend(.hidden)
@@ -67,8 +84,17 @@ struct Charts_Demo3: View {
                     }, label: {
                         Text("AREA")
                     })
+                    
+                    Button(action: {
+                        withAnimation {
+                            isVerticalChart.toggle()
+                        }
+                    }, label: {
+                        Image(systemName: "chart.bar.fill")
+                            .rotationEffect(.degrees (isVerticalChart ? 90 : 0))
+                    })
                 }
-  
+                
             }
             .padding()
             .navigationTitle("Demo 3")
