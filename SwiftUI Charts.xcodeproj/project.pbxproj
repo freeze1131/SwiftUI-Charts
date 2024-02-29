@@ -16,6 +16,7 @@
 		94D6BA4F2B909C6F00BB28DA /* RandomArcFromColorListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D6BA4E2B909C6F00BB28DA /* RandomArcFromColorListView.swift */; };
 		94D6BA512B909C7D00BB28DA /* ArcView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D6BA502B909C7D00BB28DA /* ArcView.swift */; };
 		94D6BA532B909CEE00BB28DA /* TestColorButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D6BA522B909CEE00BB28DA /* TestColorButtonView.swift */; };
+		94D6BA562B90DAC400BB28DA /* Demo2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D6BA552B90DAC400BB28DA /* Demo2View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		94D6BA4E2B909C6F00BB28DA /* RandomArcFromColorListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomArcFromColorListView.swift; sourceTree = "<group>"; };
 		94D6BA502B909C7D00BB28DA /* ArcView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcView.swift; sourceTree = "<group>"; };
 		94D6BA522B909CEE00BB28DA /* TestColorButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestColorButtonView.swift; sourceTree = "<group>"; };
+		94D6BA552B90DAC400BB28DA /* Demo2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo2View.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 		940486E62B7B496B00813E83 /* Component Views */ = {
 			isa = PBXGroup;
 			children = (
+				94D6BA542B90DAB400BB28DA /* Charts Demo2 */,
 				940486E72B7B497600813E83 /* Charts Demo1 */,
 			);
 			path = "Component Views";
@@ -128,6 +131,14 @@
 				94D6BA522B909CEE00BB28DA /* TestColorButtonView.swift */,
 			);
 			path = "Charts Demo1";
+			sourceTree = "<group>";
+		};
+		94D6BA542B90DAB400BB28DA /* Charts Demo2 */ = {
+			isa = PBXGroup;
+			children = (
+				94D6BA552B90DAC400BB28DA /* Demo2View.swift */,
+			);
+			path = "Charts Demo2";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,6 +215,7 @@
 				94D6BA4F2B909C6F00BB28DA /* RandomArcFromColorListView.swift in Sources */,
 				940486E52B7B494000813E83 /* ColorExtension.swift in Sources */,
 				94D6BA512B909C7D00BB28DA /* ArcView.swift in Sources */,
+				94D6BA562B90DAC400BB28DA /* Demo2View.swift in Sources */,
 				94D6BA532B909CEE00BB28DA /* TestColorButtonView.swift in Sources */,
 				940486D52B7B490200813E83 /* ContentView.swift in Sources */,
 				940486D32B7B490200813E83 /* SwiftUI_ChartsApp.swift in Sources */,
